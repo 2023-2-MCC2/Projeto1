@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+
+}
+ 
+
+.containn {
+    display: grid;
+    
+    
+    grid-template-columns:  1fr;  
+
+    grid-template-areas: 
+      "s1 "
+      "m "
+      "s2 "
+      "s3 ";
+  }
+
+  main{
+    background-color: #DCE6EA;
+    padding-top: 2rem;
+    padding-left: 8rem;
+  }
+
+
+  #s1 {
+    grid-area: s1;
+    
+    background-color: white;
+    height: 50px;
+    max-width: fit-content;
+  }
+  #s2 {
+    grid-area: s2;
+  }
+  
+  #s3 {
+    grid-area: s3;
+  }
+
+
+#s2{
+    display: grid;
+    padding-top: 80px;
+    gap:100px;
+    margin-left: 142px;
+    margin-right: 142px;
+    padding-bottom: 100px;
+    
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-areas: "c1 c2 c3"
+                         
+                      ;
+  }
+ 
+
+ 
+#c1{
+    grid-area: c1;
+    background-color:#DCE6EA;
+    width: 100%;
+    height: 500px;
+}
+#c2{
+    background-color:#DCE6EA;
+    grid-area:c2;
+    width: 100%;
+    height: 500px;
+}
+#c3{
+    background-color:#DCE6EA;
+    grid-area:c3;
+    width: 100%;
+    height: 500px;    
+}
+
+#c1, #c2, #c3{
+  border-radius: 15%;
+  padding-left: 90px;
+  padding-top: 40px;
+}
+#tit{
+    color:#003785;
+    font-size: 56px;
+}
+
+.img{
+  padding-left: 40px;
+}
+
+.vit{
+
+  width: 220px;
+  border-radius: 100%;
+}
+  
+.gab{
+  width: 220px;
+  border-radius: 100%;
+
+}
+
+.jam{
+  width: 220px;
+  height: 260px;
+  border-radius: 100%;
+
+}
+
+.superhr{
+  width:260px;
+  border-top: 3px solid #2196F3;
+  position: relative;
+  left: 10px;
+  
+}
+
+.nomepro{
+  font-size: 20px;
+}
+
+.nomee{
+  padding-right: 100px;
+}
+
+
+#hrzao{
+width: 20%;
+}
+#call{
+font-weight: 00;
+font-size: 55px;
+}
+#fala{
+font-size: 16px;
+padding-top: 100px;
+font-weight: 400;
+padding-bottom:80px;
+}
+#objText{
+  color: #003785;
+}
+
+#s3{
+    
+    padding-top: 38px;
+    background-color: #DCE6EA;
+    display: grid;
+    grid-template-areas: "i o"
+  }
+
+  #imgg{ grid-area: i ;
+    padding-left: 40px;
+    padding-bottom: 48px;
+    }
+    
+    #obj{ grid-area: o;
+        padding-left: 20px;
+    }
+
+  #grid{
+    display: grid;
+    grid-template-areas: "f v";
+    align-items: baseline;
+  }
+  
+  #objetivo{
+    grid-area: f;
+    display: flex;
+    align-items: center;
+    gap:7px;
+    height: 90px;
+  }
+  
+  
+  #ob{
+    font-size: 16px;
+    font-weight: 500;
+    
+  }
+  
+  #preserv{
+    margin-left: 70px;
+    display: flex;
+    
+  
+    
+  }
+  #obText{ font-size: 12px; 
+      position: relative;
+      bottom: 55px
+  }
+  
+  #valor{
+    grid-area: v;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  
+  
+  #vl{
+    font-size: 16px;
+    font-weight: 500;
+  
+  }
+  #sep{
+    color: #2196F3;
+    width: 70%;
+    border-top: 4px solid;
+
+  }
+  
+  
+  #destaq{
+    font-size: 16px;
+  }
+
+  #valor ul{
+    margin-right: 200px;
+    margin-top:60px
+  }
+  
+  #valor ul li{
+    list-style: none;
+    
+  }
+  
+  #font{
+    font-size: 12px;
+  }
+@media(max-width:1445px)
+{
+  main{
+    max-width: 1440px;
+    padding-left: 4rem;
+  }
+  .img{
+      
+  }
+  
+  .vit{
+    position: relative;
+    right: 60px;
+  }
+    
+  .gab{
+    
+    position: relative;
+    right: 60px;
+  
+  }
+  
+  .jam{
+    position: relative;
+    right: 60px;
+  
+  }
+
+  .superhr{
+    width: 0px;
+  
+  }
+
+  
+  
+
+
+
+
+
+  #s3{
+    max-width: 1440px;
+
+  }
+}
+@media(max-width:1360px){
+  main{
+    max-width: 1136px;
+  }
+
+ #c1, #c2, #c3{
+  transform: scale(0.7);
+ }
+
+ 
+ 
+  #s3{
+    max-width: 1172px;
+
+  }
+
+
+  #s2{
+    grid-template-areas: "c1  c2"
+                          "c3 c3 ";
+  }
+}
+
+@media(max-width:1172px)
+{
+    
+ 
+
+  #s2{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 80px;
+    gap:100px;
+    margin-left: 142px;
+    margin-right: 142px;
+    padding-bottom: 100px;
+    
+    
+    grid-template-areas: "c1"
+                         "c2"
+                         "c3"
+                         
+                      ;
+  }
+
+  #s3{
+   
+    grid-template-areas: "i "
+                         "o"
+  }
+
+  #fecap{
+    width: 300px;
+  }
+
+  #sepp{
+    width: 40%;
+  }
+  
+#fala{
+    font-size: 14px;
+}
+
+}
+
+@media(max-width:768px){
+    main{
+        max-width:768px;
+        padding-right: 2rem;
+    }
+
+    #s3{
+        max-width: 500px;
+    }
+   
+    .diaman{
+      position: relative;
+      left: 20px;
+    }
+}
+
+@media(max-width:500px){
+    main{
+        max-width:425px;
+    }
+
+    #call{
+      font-size: 44px;
+    }
+     
+    #s2{
+      padding-right: 200px;
+    }
+
+    #c1, #c2, #c3{
+      width: 250px;
+      position: relative;
+      right: 50px;
+    }
+    #s3{
+        margin-right: 50px;
+        max-width: 425px;
+    }
+
+    .diaman{
+      position: relative;
+      left: 20px;
+    }
+    
+    .img{
+      
+    }
+    
+    .vit{
+      transform: scale(0.7);
+      position: relative;
+      right: 110px;
+    }
+      
+    .gab{
+      transform: scale(0.7);
+      position: relative;
+      right: 110px;
+    
+    }
+    
+    .jam{
+      transform: scale(0.7);
+      position: relative;
+      right: 110px;
+    
+    }
+
+    .superhr{
+      
+      border-top: 0px ;
+      
+      
+    }
+
+    .nomee{
+      position: relative;
+      right: 33px;
+    }
+    
+    .nomepro{
+      font-size: 16px;
+    }
+
+
+}
+@media(max-width:375px){
+  main{
+      max-width:360px;
+      
+  }
+
+  #call{
+    font-size: 36px;
+  }
+   
+  #s2{
+    padding-right: 200px;
+  }
+
+  #c1, #c2, #c3{
+    width: 250px;
+    position: relative;
+    right: 50px;
+  }
+  #s3{
+      margin-right: 50px;
+      max-width: 360px;
+  }
+
+  .icons{
+    transform: scale(0.9);
+  }
+  
+  #objetivo{
+    position: relative;
+    right: 20px;
+  }
+ #valor{
+  position: relative;
+  right: 30px;
+ }
+  
+  .diaman{
+    position: relative;
+    left: 20px;
+  }
+  #sep{
+    width: 300px;
+  }
+
+}
+
+
+
+
+
+
+
